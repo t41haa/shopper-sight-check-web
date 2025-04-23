@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="border-b">
       <div className="flex h-16 items-center px-4 container mx-auto">
         <Link to="/" className="flex items-center">
-          <h1 className="text-xl font-bold">ShopperSight</h1>
+          <h1 className="text-xl font-bold">FootballKitHub</h1>
         </Link>
         
         <div className="ml-auto flex items-center space-x-4">
@@ -17,7 +17,7 @@ const Navbar = () => {
             <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input
               type="search"
-              placeholder="Search products..."
+              placeholder="Search jerseys..."
               className="pl-8 w-full"
             />
           </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
             <Button variant="ghost" size="icon" className="relative">
               <ShoppingCart className="h-5 w-5" />
               <span className="absolute top-0 right-0 h-4 w-4 rounded-full bg-primary text-[10px] font-medium text-primary-foreground flex items-center justify-center">
-                3
+                0
               </span>
             </Button>
           </nav>

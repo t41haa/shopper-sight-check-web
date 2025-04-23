@@ -5,67 +5,67 @@ import ProductCard from "@/components/ProductCard";
 import Footer from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-// Sample product data
+// Football jersey product data
 const products = [
   {
     id: 1,
-    name: "Minimalist Watch",
-    price: 149.99,
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1399&q=80",
-    category: "Accessories"
+    name: "Barcelona Home Jersey 2023/24",
+    price: 89.99,
+    image: "https://images.unsplash.com/photo-1577212017184-80cc0da11082?auto=format&fit=crop&w=1470&q=80",
+    category: "Club Teams"
   },
   {
     id: 2,
-    name: "Wireless Headphones",
-    price: 199.99,
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    category: "Electronics"
+    name: "Manchester United Away Kit 2023/24",
+    price: 94.99,
+    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1470&q=80",
+    category: "Club Teams"
   },
   {
     id: 3,
-    name: "Classic Leather Backpack",
-    price: 89.99,
-    image: "https://images.unsplash.com/photo-1491637639811-60e5560d4937?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80",
-    category: "Bags"
+    name: "England National Team Home Jersey",
+    price: 99.99,
+    image: "https://images.unsplash.com/photo-1550798874-39724c56de0d?auto=format&fit=crop&w=1470&q=80",
+    category: "National Teams"
   },
   {
     id: 4,
-    name: "Ceramic Coffee Mug",
-    price: 24.99,
-    image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    category: "Home Goods"
+    name: "Brazil National Team Away Jersey",
+    price: 99.99,
+    image: "https://images.unsplash.com/photo-1528233307472-89c2ec1c0232?auto=format&fit=crop&w=1470&q=80",
+    category: "National Teams"
   },
   {
     id: 5,
-    name: "Striped T-Shirt",
-    price: 29.99,
-    image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    category: "Clothing"
+    name: "Real Madrid Home Jersey 2023/24",
+    price: 89.99,
+    image: "https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=1470&q=80",
+    category: "Club Teams"
   },
   {
     id: 6,
-    name: "Minimalist Desk Lamp",
-    price: 59.99,
-    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    category: "Home Goods"
+    name: "Arsenal Third Kit 2023/24",
+    price: 94.99,
+    image: "https://images.unsplash.com/photo-1571536802807-30451e3f7639?auto=format&fit=crop&w=1470&q=80",
+    category: "Club Teams"
   },
   {
     id: 7,
-    name: "Sunglasses",
-    price: 79.99,
-    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80",
-    category: "Accessories"
+    name: "France National Team Home Jersey",
+    price: 99.99,
+    image: "https://images.unsplash.com/photo-1554098415-788601c80aef?auto=format&fit=crop&w=1471&q=80",
+    category: "National Teams"
   },
   {
     id: 8,
-    name: "Smart Watch",
-    price: 249.99,
-    image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80",
-    category: "Electronics"
+    name: "Liverpool Home Jersey 2023/24",
+    price: 89.99,
+    image: "https://images.unsplash.com/photo-1518675219903-c682c4b16b1d?auto=format&fit=crop&w=1471&q=80",
+    category: "Club Teams"
   }
 ];
 
-const categories = ["All", "Clothing", "Electronics", "Accessories", "Home Goods", "Bags"];
+const categories = ["All", "Club Teams", "National Teams"];
 
 const Index = () => {
   return (
@@ -77,9 +77,9 @@ const Index = () => {
         
         <section className="container mx-auto px-4 py-16">
           <div className="space-y-4 text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Products</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Official Football Jerseys</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              Discover our curated collection of top-quality products
+              Authentic jerseys from your favorite clubs and national teams
             </p>
           </div>
           
@@ -111,29 +111,32 @@ const Index = () => {
               <div className="flex flex-col items-center text-center">
                 <div className="rounded-full bg-primary/10 p-4 mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-primary">
-                    <path d="M12 2v8"></path><path d="m4.93 10.93 1.41 1.41"></path><path d="M2 18h2"></path><path d="M20 18h2"></path><path d="m19.07 10.93-1.41 1.41"></path><path d="M22 22H2"></path><path d="m8 22 4-11 4 11"></path>
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Fast Shipping</h3>
-                <p className="text-muted-foreground">Free shipping on orders over $50</p>
+                <h3 className="text-xl font-bold mb-2">Authentic Quality</h3>
+                <p className="text-muted-foreground">100% official licensed jerseys</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="rounded-full bg-primary/10 p-4 mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-primary">
-                    <path d="m9 13 6-6"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="7" r="1"></circle><path d="M9 7a2 2 0 0 0-2 2v12"></path><path d="M9 11v2"></path><path d="M15 7h2a2 2 0 0 1 2 2v2"></path><path d="M18 18a6 6 0 0 0-6 6"></path>
+                    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+                    <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+                    <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Fast Shipping</h3>
+                <p className="text-muted-foreground">Free shipping on orders over $150</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <div className="rounded-full bg-primary/10 p-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-primary">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m9 12 2 2 4-4" />
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-2">Easy Returns</h3>
                 <p className="text-muted-foreground">30-day hassle-free returns</p>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <div className="rounded-full bg-primary/10 p-4 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-primary">
-                    <path d="M19.3 14.8C19.3 14.8 18.3 19 13.8 19C9.3 19 6.7 15.8 5.6 12.8"></path><path d="M14 3.5C9.5 3.5 6.7 6.7 5.6 9.8"></path><circle cx="12" cy="11.5" r="2"></circle><path d="m2 12 3.5 3.5L9 12"></path><path d="m22 12-3.5-3.5L15 12"></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold mb-2">Secure Payment</h3>
-                <p className="text-muted-foreground">100% secure payment processing</p>
               </div>
             </div>
           </div>
@@ -144,8 +147,8 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4">
                 <span className="inline-block bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-md">Limited Time Offer</span>
-                <h3 className="text-2xl md:text-3xl font-bold">Subscribe & Get 15% Off Your First Order</h3>
-                <p className="text-muted-foreground">Stay updated on our latest products and get exclusive offers straight to your inbox.</p>
+                <h3 className="text-2xl md:text-3xl font-bold">Get 15% Off Your First Jersey</h3>
+                <p className="text-muted-foreground">Join our newsletter for exclusive deals and early access to new kit releases.</p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <input
                     type="email"
@@ -157,11 +160,11 @@ const Index = () => {
                   </button>
                 </div>
               </div>
-              <div className="hidden md:block relative h-[200px] w-[300px] mx-auto">
+              <div className="hidden md:block relative h-[300px] w-full mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg blur-2xl"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                  alt="Newsletter"
+                  src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1470&q=80"
+                  alt="Football Jersey"
                   className="h-full w-full object-cover rounded-lg"
                 />
               </div>
